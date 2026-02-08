@@ -5,18 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Paula Suárez</title>
     <style>
-      .tech-badge { ... }
-  </style> </head>
+        /* Aquí va tu diseño CSS actual */
+        body { font-family: 'Segoe UI', sans-serif; }
+        .tech-list { display: flex; flex-wrap: wrap; gap: 10px; padding: 10px; }
+        .tech-badge { background: #1572B6; color: white; padding: 5px 12px; border-radius: 20px; }
+        details { background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 10px; }
+        summary { font-weight: bold; cursor: pointer; outline: none; }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>¡Hola! Soy Pau Suarez y este es mi CV!</h1>
+        <p>Desarrolladora Frontend en formación | Estudiante UBA</p>
+    </header>
 
     <section>
         <h2>Sobre Mí</h2>
-        <p>Actualmente me encuentro cursando el Ciclo Básico Común en la Universidad de Buenos Aires, enfocada en el desarrollo web y la mejora constante de procesos a través de tecnología.</p>
+        <p>Actualmente me encuentro cursando el Ciclo Básico Común en la Universidad de Buenos Aires.</p>
     </section>
 
     <section>
         <h2>Herramientas y Tecnologías</h2>
         <p><i>Haz clic en cada área para ver las tecnologías:</i></p>
-        
+
         <details>
             <summary>🌐 Frontend</summary>
             <div class="tech-list">
@@ -45,20 +57,9 @@
     </section>
 
     <section>
-        <h2>Proyectos en curso</h2>
-        <div class="project-item">
-            <strong>App Club Pigmento:</strong> Desarrollo enfocado en la experiencia del usuario y gestión de beneficios.
-        </div>
-        <div class="project-item">
-            <strong>Estandarización de Interfases con IA:</strong> Optimización de estructuras HTML y CSS para asegurar consistencia visual.
-        </div>
-    </section>
-
-    <section>
         <h2>Contacto</h2>
         <p>Podés contactarme o ver mi perfil profesional aquí:</p>
-        <a href="https://www.linkedin.com/in/paula-suarez-493969234/" target="_blank" class="btn-link">Mi perfil de LinkedIn</a>
+        <a href="https://www.linkedin.com/in/paula-suarez-493969234/" target="_blank">LinkedIn</a>
     </section>
-
 </body>
 </html>
