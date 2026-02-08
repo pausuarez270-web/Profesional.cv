@@ -2,38 +2,91 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Paula Suárez</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; background-color: #f4f4f4; }
-        header { background: #1572B6; color: white; padding: 20px; text-align: center; border-radius: 8px; }
-        section { background: white; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #1572B6; border-bottom: 2px solid #1572B6; }
-        .tech-stack span { background: #eee; padding: 5px 10px; border-radius: 5px; margin-right: 5px; font-size: 0.9em; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 850px; margin: auto; padding: 20px; background-color: #f0f2f5; color: #333; }
+        header { background: linear-gradient(135deg, #1572B6 0%, #003f7f 100%); color: white; padding: 40px 20px; text-align: center; border-radius: 12px; margin-bottom: 30px; }
+        header h1 { margin: 0; font-size: 2.5em; }
+        header p { font-size: 1.2em; opacity: 0.9; }
+        
+        section { background: white; padding: 25px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        h2 { color: #1572B6; border-bottom: 2px solid #eef2f7; padding-bottom: 10px; }
+
+        /* Estilo para los cuadros interactivos de herramientas */
+        details { background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 10px; border: 1px solid #e1e4e8; cursor: pointer; transition: 0.3s; }
+        details:hover { border-color: #1572B6; background: #fff; }
+        summary { font-weight: bold; font-size: 1.1em; outline: none; list-style: none; }
+        summary::-webkit-details-marker { display: none; } /* Quita la flechita default */
+        
+        .tech-list { margin-top: 15px; display: flex; flex-wrap: wrap; gap: 10px; }
+        .tech-badge { background: #1572B6; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.9em; }
+
+        .project-item { margin-bottom: 15px; padding-left: 15px; border-left: 3px solid #1572B6; }
+        
+        a { color: #1572B6; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+        .btn-link { background: #0077B5; color: white; padding: 10px 20px; border-radius: 5px; display: inline-block; margin-top: 10px; }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Paula Suárez</h1>
-        <p>Programadora Junior | Estudiante de Ingeniería (UBA)</p>
+        <h1>¡Hola! Soy Pau Suarez y este es mi CV!</h1>
+        <p>Desarrolladora Frontend en formación | Estudiante UBA</p>
     </header>
     
     <section>
         <h2>Sobre Mí</h2>
-        <p>Estudiante de Ingeniería Técnica apasionada por la resolución de problemas y la automatización con Python y JavaScript.</p>
+        <p>Actualmente me encuentro cursando el Ciclo Básico Común en la Universidad de Buenos Aires, enfocada en el desarrollo web y la mejora constante de procesos a través de tecnología.</p>
     </section>
 
     <section>
-        <h2>Herramientas</h2>
-        <div class="tech-stack">
-            <span>HTML5</span> <span>CSS3</span> <span>Python</span> <span>Git/GitHub</span>
+        <h2>Herramientas y Tecnologías</h2>
+        <p><i>Haz clic en cada área para ver las tecnologías:</i></p>
+        
+        <details>
+            <summary>🌐 Frontend</summary>
+            <div class="tech-list">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+            </div>
+        </details>
+
+        <details>
+            <summary>⚙️ Control de Versiones</summary>
+            <div class="tech-list">
+                <span class="tech-badge">Git</span>
+                <span class="tech-badge">GitHub</span>
+            </div>
+        </details>
+
+        <details>
+            <summary>🤖 Productividad e IA</summary>
+            <div class="tech-list">
+                <span class="tech-badge">AI Agents</span>
+                <span class="tech-badge">Optimization</span>
+                <span class="tech-badge">VS Code</span>
+            </div>
+        </details>
+    </section>
+
+    <section>
+        <h2>Proyectos en curso</h2>
+        <div class="project-item">
+            <strong>App Club Pigmento:</strong> Desarrollo enfocado en la experiencia del usuario y gestión de beneficios.
+        </div>
+        <div class="project-item">
+            <strong>Estandarización de Interfases con IA:</strong> Optimización de estructuras HTML y CSS para asegurar consistencia visual.
         </div>
     </section>
 
     <section>
-        <h2>Proyectos</h2>
-        <ul>
-            <li><strong>Estandarización de Interfases:</strong> Optimización de CSS usando agentes de IA.</li>
-        </ul>
+        <h2>Contacto</h2>
+        <p>Podés contactarme o ver mi perfil profesional aquí:</p>
+        <a href="https://https://www.linkedin.com/in/paula-suarez-493969234/" target="_blank" class="btn-link">Mi perfil de LinkedIn</a>
     </section>
+
 </body>
 </html>
