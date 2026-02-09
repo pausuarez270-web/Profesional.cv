@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Paula Suárez</title>
+    
+    <link rel="stylesheet" href="css/styles.css"> 
+
     <style>
-        /* Aquí va tu diseño CSS actual */
+        /* Aquí podés dejar tus estilos internos o borrarlos si ya están en el .css */
         body { font-family: 'Segoe UI', sans-serif; }
-        .tech-list { display: flex; flex-wrap: wrap; gap: 10px; padding: 10px; }
-        .tech-badge { background: #1572B6; color: white; padding: 5px 12px; border-radius: 20px; }
-        details { background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 10px; }
-        summary { font-weight: bold; cursor: pointer; outline: none; }
     </style>
 </head>
 <body>
@@ -21,23 +20,21 @@
 
     <section>
         <h2>Sobre Mí</h2>
-        <p>Actualmente me encuentro cursando el Ciclo Básico Común en la Universidad de Buenos Aires.</p>
+        <p>Actualmente me encuentro cursando el Ciclo Básico Común...</p>
     </section>
-<section>
-    <a href="tecnologias.html" class="boton-tech">
-    🛠️ Ver Herramientas y Tecnologías
-  </a>
-</section>
+
+    <section>
+        <div class="container-accion">
+            <a href="tecnologias.html" class="btn-interactivo">
+                🚀 Explorar mi Stack Tecnológico
+            </a>
+        </div>
+    </section>
+
     <section>
         <h2>Contacto</h2>
         <p>Podés contactarme o ver mi perfil profesional aquí:</p>
-        <a href="https://www.linkedin.com/in/paula-suarez-493969234/" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/paula-suarez-493969234/">LinkedIn</a>
     </section>
-<div class="container-accion">
-    <a href="stack.html" class="btn-interactivo">
-        🚀 Explorar mi Stack Tecnológico
-    </a>
-</div>
-<link rel="stylesheet" href="css/styles.css">
-</body>
-</html>
+
+</body> </html> 
