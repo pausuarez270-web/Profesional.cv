@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Paula Suárez</title>
-    
-    <link rel="stylesheet" href="css/style.css"> 
-
+    body {
+    <link rel="stylesheet" href="style.css">
     <style>
         /* Aquí podés dejar tus estilos internos o borrarlos si ya están en el .css */
         body { font-family: 'Segoe UI', sans-serif; }
