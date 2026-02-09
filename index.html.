@@ -13,7 +13,6 @@
         summary { font-weight: bold; cursor: pointer; outline: none; }
     </style>
 </head>
-
 <body>
     <header>
         <h1>¡Hola! Soy Pau Suarez y este es mi CV!</h1>
