@@ -23,38 +23,27 @@
         <h2>Sobre Mí</h2>
         <p>Actualmente me encuentro cursando el Ciclo Básico Común en la Universidad de Buenos Aires.</p>
     </section>
+<section>
+    <h2>🛠️ Herramientas y Tecnologías</h2>
+    <p><i>Haz clic en cada área para ver las tecnologías:</i></p>
 
-    <section>
-        <h2>Herramientas y Tecnologías</h2>
-        <p><i>Haz clic en cada área para ver las tecnologías:</i></p>
+    <details>
+        <summary>🌐 Frontend</summary>
+        <div class="tech-list">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">JavaScript</span>
+        </div>
+    </details>
 
-        <details>
-            <summary>🌐 Frontend</summary>
-            <div class="tech-list">
-                <span class="tech-badge">HTML5</span>
-                <span class="tech-badge">CSS3</span>
-                <span class="tech-badge">JavaScript</span>
-            </div>
-        </details>
-
-        <details>
-            <summary>⚙️ Control de Versiones</summary>
-            <div class="tech-list">
-                <span class="tech-badge">Git</span>
-                <span class="tech-badge">GitHub</span>
-            </div>
-        </details>
-
-        <details>
-            <summary>🤖 Productividad e IA</summary>
-            <div class="tech-list">
-                <span class="tech-badge">AI Agents</span>
-                <span class="tech-badge">Optimization</span>
-                <span class="tech-badge">VS Code</span>
-            </div>
-        </details>
-    </section>
-
+    <details>
+        <summary>⚙️ Control de Versiones</summary>
+        <div class="tech-list">
+            <span class="tech-badge">Git</span>
+            <span class="tech-badge">GitHub</span>
+        </div>
+    </details>
+</section>
     <section>
         <h2>Contacto</h2>
         <p>Podés contactarme o ver mi perfil profesional aquí:</p>
