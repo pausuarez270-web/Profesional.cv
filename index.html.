@@ -33,5 +33,10 @@
         <p>Podés contactarme o ver mi perfil profesional aquí:</p>
         <a href="https://www.linkedin.com/in/paula-suarez-493969234/" target="_blank">LinkedIn</a>
     </section>
+<div class="container-accion">
+    <a href="stack.html" class="btn-interactivo">
+        🚀 Explorar mi Stack Tecnológico
+    </a>
+</div>
 </body>
 </html>
