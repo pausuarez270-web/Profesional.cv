@@ -35,6 +35,10 @@
         <p>Podés contactarme o ver mi perfil profesional aquí:</p>
         <a href="https://www.linkedin.com/in/paula-suarez-493969234/">LinkedIn</a>
     </section>
-
+<details>
+  <summary><b>Ver detalles del proyecto: Estandarización con IA</b></summary>
+  <br>
+  Aquí puedes explicar la arquitectura, qué agentes de IA usaste y los resultados obtenidos.
+</details>
 </body>
 </html> 
