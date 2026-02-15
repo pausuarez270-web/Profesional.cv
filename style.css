@@ -17,3 +17,42 @@ body {
     background-color: #0056b3;
     transform: translateY(-3px); /* Efecto de levitación */
 }
+/* Contenedor en cuadrícula */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Tarjeta individual interactiva */
+.tech-card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease; /* Transición suave como tu btn-interactivo */
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.tech-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Efecto al pasar el mouse (Interatividad) */
+.tech-card:hover {
+    background: #ffffff;
+    border-color: #007bff; /* Color azul de tu botón actual */
+    transform: translateY(-10px); /* Efecto de levitación potenciado */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.tech-card span {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #333;
+}
