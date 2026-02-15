@@ -109,15 +109,21 @@
     // 1. Iniciar Partículas
     particlesJS("particles-js", {
         "particles": {
-            "number": { "value": 80 },
-            "color": { "value": "#4a90e2" },
-            "line_linked": { "enable": true, "distance": 150, "color": "#4a90e2", "opacity": 0.4 },
+            "number": { "value": 100 },
+            "color": { "value": ["#9f7aea", "#63b3ed", "#4fd1c5"] },
+            "line_linked": { "enable": true, "distance": 150, "color": "#9f7aea", "opacity": 0.4 },
             "move": { "enable": true, "speed": 2 }
         },
-        "interactivity": {
-            "events": { "onhover": { "enable": true, "mode": "grab" } }
-        }
-    });
+     "interactivity": {
+  "detect_on": "window",
+  "events": {
+    "onhover": { "enable": true, "mode": "bubble" }
+  },
+  "modes": {
+    "bubble": { "distance": 200, "size": 10, "duration": 2, "opacity": 0.8 }
+  }
+},
+"retina_detect": true
 </script>
 </body>
 </html>
