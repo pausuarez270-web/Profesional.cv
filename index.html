@@ -118,19 +118,6 @@
             "events": { "onhover": { "enable": true, "mode": "grab" } }
         }
     });
-
-    // 2. Máquina de escribir (para que no se pierda)
-    const text = "¡Hola! Soy Pau Suarez y este es mi CV! ✨";
-    let i = 0;
-    const target = document.getElementById("typer");
-    function typeWriter() {
-        if (target && i < text.length) {
-            target.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 100);
-        }
-    }
-    window.onload = typeWriter;
 </script>
 </body>
 </html>
