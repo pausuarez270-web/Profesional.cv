@@ -121,3 +121,145 @@ section {
 .tech-card img {
     width: 40px;
 }
+/* Estilos Base */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.dashboard {
+    display: flex;
+}
+
+/* Sidebar Estilizada */
+.sidebar {
+    width: 260px;
+    background-color: #1a202c;
+    color: white;
+    padding: 40px 20px;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #a0aec0;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: #cbd5e0;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #2d3748;
+    color: white;
+    transform: translateX(8px);
+}
+
+/* Contenido Principal Centrado */
+.main-content {
+    margin-left: 260px;
+    flex: 1;
+    padding: 50px;
+    max-width: 850px; /* Hace que se vea más centrado y delicado */
+    margin-right: auto;
+}
+
+.titulo-subrayado {
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.titulo-subrayado::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 40%;
+    height: 4px;
+    background: #4a90e2;
+    border-radius: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #718096;
+    margin-bottom: 40px;
+}
+
+/* Tarjetas y Secciones */
+section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Los 3 bloques de tecnología */
+.tech-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tech-card-group {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    transition: 0.3s;
+}
+
+.tech-card-group:hover {
+    border-color: #4a90e2;
+    transform: translateY(-5px);
+}
+
+.tech-card-group h3 {
+    margin-top: 0;
+    color: #2d3748;
+    font-size: 1rem;
+}
+
+/* Lista de Proyectos */
+.lista-proyectos {
+    padding-left: 20px;
+}
+
+.lista-proyectos li {
+    margin-bottom: 15px;
+}
+
+.btn-interactivo {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0077b5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-interactivo:hover {
+    background: #005a87;
+    transform: scale(1.05);
+}
