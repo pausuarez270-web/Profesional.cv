@@ -48,21 +48,24 @@
 
             </main>
     </div>
-
-    <script>
-        // 1. Efecto Máquina de Escribir para el Título
+<script>
+        // 1. Efecto Máquina de Escribir
         const text = "¡Hola! Soy Pau Suarez y este es mi CV! ✨";
         let i = 0;
+        const target = document.getElementById("typer");
+
         function typeWriter() {
-            if (i < text.length) {
-                document.getElementById("typer").innerHTML += text.charAt(i);
+            if (target && i < text.length) {
+                target.innerHTML += text.charAt(i);
                 i++;
                 setTimeout(typeWriter, 100);
             }
         }
+
+        // 2. Iniciar cuando cargue la página
         window.onload = typeWriter;
 
-        // 2. Click sorpresa en los emojis
+        // 3. Efecto de clic en los emojis
         document.querySelectorAll('.emoji-anim').forEach(item => {
             item.addEventListener('click', () => {
                 item.style.transform = "scale(2) rotate(360deg)";
