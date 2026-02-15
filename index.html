@@ -10,11 +10,13 @@
 
     <div class="dashboard">
         <nav class="sidebar">
-            <div class="sidebar-title">Menú Pro 🚀</div>
+            <div class="sidebar-title">Menú Pro ✨</div>
             <ul>
                 <li><a href="#sobre-mi">👋 Sobre Mí</a></li>
                 <li><a href="#stack">🛠️ Stack</a></li>
                 <li><a href="#proyectos">📂 Proyectos</a></li>
+                <li><a href="#formacion">🎓 Formación</a></li>
+                <li><a href="#datos-curiosos">⚡ Datos Curiosos</a></li>
                 <li><a href="#contacto">📧 Contacto</a></li>
             </ul>
         </nav>
@@ -24,6 +26,12 @@
                 <h1 id="typer" class="titulo-subrayado"></h1>
                 <p class="subtitle">Desarrolladora Frontend en formación | Estudiante UBA</p>
             </header>
+
+            <section id="sobre-mi">
+                <h2>Sobre Mí</h2>
+                <p>Actualmente me encuentro cursando el Ciclo Básico Común en la Universidad de Buenos Aires (UBA). Soy una persona proactiva y en constante aprendizaje, apasionada por la tecnología.</p>
+                <p>Me defino como una entusiasta del código limpio. Estoy preparando proyectos sólidos que combinen IA y desarrollo web, aplicando buenas prácticas.</p>
+            </section>
 
             <section id="stack">
                 <h2>Stack Tecnológico 💡</h2>
@@ -46,14 +54,39 @@
                 </div>
             </section>
 
-            </main>
+            <section id="proyectos">
+                <h2>Proyectos</h2>
+                <ul class="lista-proyectos">
+                    <li><strong>Estandarización de interfases con IA:</strong> Optimización de estructuras HTML y CSS. Creación de app móvil con sistema de puntos.</li>
+                    <li><strong>Curriculum Vitae Interactivo:</strong> Mi perfil profesional en GitHub con documentación técnica.</li>
+                </ul>
+            </section>
+
+            <section id="formacion">
+                <h2>Formación</h2>
+                <p>🎓 Ciclo Básico Común (CBC) - Universidad de Buenos Aires (En curso).</p>
+                <p>📚 Formación autodidacta en desarrollo moderno.</p>
+            </section>
+
+            <section id="datos-curiosos">
+                <h2>Datos Curiosos ⚡</h2>
+                <p>• Me encanta resolver problemas de diseño con soluciones eficientes.</p>
+                <p>• Uso IA para optimizar mi flujo de trabajo diario.</p>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Podés contactarme aquí:</p>
+                <a href="https://www.linkedin.com/in/paula-suarez-493969234/" class="btn-interactivo">LinkedIn</a>
+            </section>
+        </main>
     </div>
-<script>
-        // 1. Efecto Máquina de Escribir
+
+    <script>
+        // EFECTO MÁQUINA DE ESCRIBIR
         const text = "¡Hola! Soy Pau Suarez y este es mi CV! ✨";
         let i = 0;
         const target = document.getElementById("typer");
-
         function typeWriter() {
             if (target && i < text.length) {
                 target.innerHTML += text.charAt(i);
@@ -61,11 +94,9 @@
                 setTimeout(typeWriter, 100);
             }
         }
-
-        // 2. Iniciar cuando cargue la página
         window.onload = typeWriter;
 
-        // 3. Efecto de clic en los emojis
+        // EFECTO CLIC EN EMOJIS
         document.querySelectorAll('.emoji-anim').forEach(item => {
             item.addEventListener('click', () => {
                 item.style.transform = "scale(2) rotate(360deg)";
