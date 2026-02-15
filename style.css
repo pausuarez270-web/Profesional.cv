@@ -1,4 +1,4 @@
-/* Fondo de partículas */
+/* 1. Partículas al fondo */
 #particles-js {
     position: fixed;
     width: 100%;
@@ -9,48 +9,45 @@
     background-color: #f8fafc;
 }
 
+/* 2. Base y Sidebar (El Menú Pro) */
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
     display: flex;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .sidebar {
     width: 250px;
-    background-color: #1a202c;
+    background-color: #1a202c; /* Color oscuro que te gustaba */
     color: white;
     padding: 40px 20px;
     height: 100vh;
     position: fixed;
 }
 
-.main-content {
-    margin-left: 280px;
-    padding: 50px;
-    flex: 1;
-    max-width: 800px;
+.sidebar-title {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: #a0aec0;
 }
 
-section {
-    background: rgba(255, 255, 255, 0.9); /* Un poco transparente para ver las partículas */
-    padding: 25px;
-    border-radius: 15px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+.sidebar ul {
+    list-style: none; /* Esto quita los puntitos blancos */
+    padding: 0;
 }
 
-.tech-grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+.sidebar ul li a {
+    color: #cbd5e0;
+    text-decoration: none; /* Quita el subrayado azul */
+    display: block;
+    padding: 12px;
+    transition: 0.3s;
 }
 
-.tech-card-group {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    border: 1px solid #e2e8f0;
+.sidebar ul li a:hover {
+    background-color: #2d3748;
+    transform: translateX(10px);
+    color: white;
 }
-
-.emoji-anim { font-size: 2rem; display: block; }
