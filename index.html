@@ -10,77 +10,65 @@
 
     <div class="dashboard">
         <nav class="sidebar">
-            <div class="sidebar-title">Menú Profesional</div>
+            <div class="sidebar-title">Menú Pro 🚀</div>
             <ul>
                 <li><a href="#sobre-mi">👋 Sobre Mí</a></li>
-                <li><a href="#stack">🛠️ Stack Tecnológico</a></li>
+                <li><a href="#stack">🛠️ Stack</a></li>
                 <li><a href="#proyectos">📂 Proyectos</a></li>
-                <li><a href="#formacion">🎓 Formación</a></li>
-                <li><a href="#datos-curiosos">✨ Datos Curiosos</a></li>
                 <li><a href="#contacto">📧 Contacto</a></li>
             </ul>
         </nav>
 
         <main class="main-content">
             <header>
-                <h1 class="titulo-subrayado">¡Hola! Soy Pau Suarez y este es mi CV!</h1>
+                <h1 id="typer" class="titulo-subrayado"></h1>
                 <p class="subtitle">Desarrolladora Frontend en formación | Estudiante UBA</p>
             </header>
 
-            <section id="sobre-mi">
-                <h2>Sobre Mí</h2>
-                <p>Actualmente me encuentro cursando el Ciclo Básico Común en la Universidad de Buenos Aires (UBA). Soy una persona proactiva y en constante aprendizaje, apasionada por la resolución de problemas a través de la tecnología.</p>
-                <p>Me defino como una entusiasta del código limpio y las interfaces intuitivas. Actualmente, estoy dedicando mi tiempo a preparar proyectos sólidos que combinen IA y desarrollo web, buscando siempre aplicar buenas prácticas de documentación y arquitectura.</p>
-            </section>
-
             <section id="stack">
-                <h2>Stack Tecnológico</h2>
+                <h2>Stack Tecnológico 💡</h2>
                 <div class="tech-grid-3">
                     <div class="tech-card-group">
+                        <span class="emoji-anim">💻</span>
                         <h3>Frontend</h3>
                         <p>HTML5, CSS3, JavaScript</p>
                     </div>
                     <div class="tech-card-group">
+                        <span class="emoji-anim">⚙️</span>
                         <h3>Control de Versiones</h3>
                         <p>Git, GitHub</p>
                     </div>
                     <div class="tech-card-group">
+                        <span class="emoji-anim">🤖</span>
                         <h3>Productividad e IA</h3>
-                        <p>Agentes de IA, VS Code, Prompt Engineering</p>
+                        <p>Agentes, VS Code, Prompts</p>
                     </div>
                 </div>
             </section>
 
-            <section id="proyectos">
-                <h2>Proyectos</h2>
-                <ul class="lista-proyectos">
-                    <li>
-                        <strong>Estandarización de interfases con IA:</strong> Optimización de estructuras HTML y CSS. Creación de app móvil con sistema de puntos y actualizaciones de ofertas.
-                    </li>
-                    <li>
-                        <strong>Curriculum Vitae Interactivo:</strong> Desarrollo de mi perfil profesional directamente en GitHub, aplicando buenas prácticas de documentación.
-                    </li>
-                </ul>
-            </section>
-
-            <section id="formacion">
-                <h2>Formación</h2>
-                <p>• Ciclo Básico Común (CBC) - Universidad de Buenos Aires (En curso).</p>
-                <p>• Formación autodidacta en herramientas de desarrollo moderno y automatización.</p>
-            </section>
-
-            <section id="datos-curiosos">
-                <h2>Datos Curiosos</h2>
-                <p>Me encanta investigar cómo la inteligencia artificial puede facilitar tareas cotidianas y siempre estoy buscando nuevos desafíos lógicos para resolver.</p>
-            </section>
-
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <p>Podés ver más de mi trabajo o contactarme aquí:</p>
-                <a href="https://www.linkedin.com/in/paula-suarez-493969234/" class="btn-interactivo">LinkedIn</a>
-            </section>
-        </main>
+            </main>
     </div>
 
+    <script>
+        // 1. Efecto Máquina de Escribir para el Título
+        const text = "¡Hola! Soy Pau Suarez y este es mi CV! ✨";
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typer").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        window.onload = typeWriter;
+
+        // 2. Click sorpresa en los emojis
+        document.querySelectorAll('.emoji-anim').forEach(item => {
+            item.addEventListener('click', () => {
+                item.style.transform = "scale(2) rotate(360deg)";
+                setTimeout(() => item.style.transform = "scale(1)", 500);
+            });
+        });
+    </script>
 </body>
 </html>
