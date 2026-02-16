@@ -80,54 +80,41 @@
             </section>
         </main>
     </div>
-   <script>
-    // 1. CONFIGURACIÓN DE PARTÍCULAS
-    particlesJS("particles-js", {
-        "particles": {
-            "number": { "value": 100 },
-            "color": { "value": ["#9f7aea", "#63b3ed", "#4fd1c5"] }, // Colores corregidos con [ ]
-            "shape": { "type": "circle" },
-            "opacity": { "value": 0.6 },
-            "size": { "value": 3 },
-            "line_linked": { 
-                "enable": true, 
-                "distance": 150, 
-                "color": "#9f7aea", 
-                "opacity": 0.4, 
-                "width": 1 
-            },
-            "move": { "enable": true, "speed": 2 }
-        },
-        "interactivity": {
-            "detect_on": "window",
-            "events": {
-                "onhover": { "enable": true, "mode": "bubble" }, // El modo burbuja
-                "onclick": { "enable": true, "mode": "push" }
-            },
-            "modes": {
-                "bubble": { 
-                    "distance": 200, 
-                    "size": 12,      // Qué tan grande crece la burbuja
-                    "duration": 2, 
-                    "opacity": 0.8 
-                }
-            }
-        },
-        "retina_detect": true
-    });
+  <div id="particles-js"></div>
 
-    // 2. MÁQUINA DE ESCRIBIR
-    const text = "¡Hola! Soy Pau Suarez y este es mi CV! ✨";
-    let i = 0;
-    const target = document.getElementById("typer");
-    function typeWriter() {
-        if (target && i < text.length) {
-            target.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 100);
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+        // CONFIGURACIÓN DE PARTÍCULAS
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 100 },
+                "color": { "value": ["#9f7aea", "#63b3ed", "#4fd1c5"] },
+                "line_linked": { "enable": true, "color": "#9f7aea" },
+                "move": { "enable": true, "speed": 2 }
+            },
+            "interactivity": {
+                "detect_on": "window",
+                "events": { "onhover": { "enable": true, "mode": "bubble" } },
+                "modes": { "bubble": { "distance": 200, "size": 12, "duration": 2 } }
+            }
+        });
+
+        // MÁQUINA DE ESCRIBIR
+        const text = "¡Hola! Soy Pau Suarez y este es mi CV! ✨";
+        let i = 0;
+
+        function typeWriter() {
+            const target = document.getElementById("typer"); // <-- Buscamos el ID aquí adentro
+            if (target && i < text.length) {
+                target.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
         }
-    }
-    window.onload = typeWriter;
-</script>
+
+        // Ejecutar cuando la página termine de cargar
+        window.onload = typeWriter;
+    </script>
 </body>
 </html>
